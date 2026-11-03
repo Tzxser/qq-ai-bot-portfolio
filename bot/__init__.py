@@ -1,0 +1,1 @@
+"""Modular OneBot bot core."""

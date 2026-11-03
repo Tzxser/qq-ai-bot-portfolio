@@ -1,0 +1,7 @@
+ARG NAPCAT_IMAGE=mlikiowa/napcat-docker:latest
+FROM ${NAPCAT_IMAGE}
+# Unpack before mounting the live configuration directory. The upstream first-run
+# extraction copies bundled defaults over that directory when a container is recreated.
+RUN mkdir -p /app/napcat && \
+    unzip -qo /app/NapCat.Shell.zip -d /app/napcat && \
+    test -s /app/napcat/napcat.mjs

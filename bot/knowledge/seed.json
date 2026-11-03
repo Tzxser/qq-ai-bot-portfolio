@@ -1,0 +1,38 @@
+[
+  {
+    "id": "site-home-intro-20260923",
+    "title": "示例知识条目（待审核）",
+    "body": "示例知识条目，用于演示知识审核与检索流程。",
+    "category": "stable_intro",
+    "source_type": "public_site",
+    "source_url": "https://example.com/",
+    "source_ref": "homepage",
+    "group_scope": [],
+    "source_updated_at": null,
+    "fetched_at": "2026-09-23T09:18:00+08:00",
+    "valid_from": null,
+    "valid_until": null,
+    "review_status": "pending",
+    "reviewed_by": null,
+    "version": 1,
+    "owner_department": null
+  },
+  {
+    "id": "site-training-disclaimer-20260923",
+    "title": "示例知识条目（待审核）",
+    "body": "示例知识条目，用于演示知识审核与检索流程。",
+    "category": "stable_boundary",
+    "source_type": "public_site",
+    "source_url": "https://example.com/",
+    "source_ref": "training-section",
+    "group_scope": [],
+    "source_updated_at": null,
+    "fetched_at": "2026-09-23T09:18:00+08:00",
+    "valid_from": null,
+    "valid_until": null,
+    "review_status": "pending",
+    "reviewed_by": null,
+    "version": 1,
+    "owner_department": null
+  }
+]

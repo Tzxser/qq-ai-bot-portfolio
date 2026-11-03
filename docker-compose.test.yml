@@ -1,0 +1,16 @@
+services:
+  tests:
+    image: qq-ai-bot-core:local
+    profiles: [test]
+    user: "0:0"
+    working_dir: /work
+    volumes:
+      - .:/work:ro
+    env_file: .env
+    environment:
+      RUN_DB_TESTS: "1"
+      POSTGRES_HOST: postgres
+      REDIS_HOST: redis
+    networks: [storage, gateway]
+    command: [sh, -c, 'pip install -q pytest==9.1.1 pytest-asyncio==1.4.0 PyYAML==6.0.3 --target /tmp/test-deps && PYTHONPATH=/tmp/test-deps:/work python -m pytest -q -p no:cacheprovider']
+    mem_limit: 256m
